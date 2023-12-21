@@ -1,38 +1,109 @@
-.App {
-  text-align: center;
+body {
+  background: #2b2c2f;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  margin-top: 150px;
   color: white;
+  gap: 0.5rem;
+}
+.input-field {
+  width: 220px;
+  height: 30px;
+  background: none;
+  margin-right: 15px;
+  outline: none;
+  border-radius: 30px;
+  border: none;
+  background-color: transparent;
+  box-shadow: 3px 3px 3px #222327, -3px -3px 3px #363636;
+  color: #fff;
+  padding: 0 15px;
+  font-size: 18px;
+}
+.btn,
+.delete-btn {
+  border: none;
+  background: none;
+  outline: none;
+  color: #fff;
+  font-size: 14px;
+  box-shadow: 3px 3px 3px #222327, -3px -3px 3px #363636;
+  width: 80px;
+  height: 30px;
+  border-radius: 30px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.delete-btn {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin-left: 150px;
+}
+.btn:hover,
+.input-field:hover,
+.delete-btn:hover {
+  box-shadow: inset 3px 3px 3px #222327, inset -3px -3px 3px #363636;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.d-f {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  font-size: 18px;
+  color: #fff;
+}
+.d-f > div {
+  cursor: pointer;
+}
+.container .buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  margin-top: 10px;
+}
+
+.toggle {
+  border: none;
+  background: none;
+  outline: none;
+  color: #fff;
+  font-size: 14px;
+  box-shadow: 3px 3px 3px #222327, -3px -3px 3px #363636;
+  width: 250px;
+  height: 30px;
+  border-radius: 30px;
+  cursor: pointer;
+  text-align: center;
+  margin: 20px auto 0;
+  padding-top: 5px;
+  transition: 0.7s ease;
+}
+.todoConatainer {
+  width: 300px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid white;
+  padding: 3px 5px;
+  background: rgb(5, 5, 5, 0.3);  
+  margin-top: 10px;
+  border-radius: 20px;
+}
+@media screen and (max-width: 480px) {
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
   }
 }
